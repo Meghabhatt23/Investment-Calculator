@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Investment Management</title>
+</head>
+<body>
+    <h1 id="main">Investment Calculator</h1>
+    <h3> How much will it be worth?</h3>
+
+<table id="table01">
+
+    <h4>Enter Investment Data:</h4>
+    <td>Initial Investment($):</td>
+        <td>
+            <input id="amount" onchange="Calculate();">
+        </td>
+        <tr>
+            <td>Annual Growth (%):</td>
+            <td><input id="apr" onchange="Calculate();"></td>
+        </tr>
+        <tr>
+            <td>Years To Grow:(Years)</td>
+            <td><input id="years" onchange="Calculate();"></td>
+        <tr> <th> </th>
+            <tr>
+                <td>Future Value of your Investment :</td>
+                <td id="totalvalue"><span class="output" id="total"></span></td>
+            </tr>
+</table>
+        <button onclick="calculate();">Calculate</button>
+</body>
+    <script src="script.js"></script>
+</html>
